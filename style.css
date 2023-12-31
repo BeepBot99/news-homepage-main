@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-orange: hsl(35, 77%, 62%);
+}
+
+body {
+    margin: 0;
+    padding: 5rem 12rem 5rem 12rem;
+    font-size: 15px;
+    font-family: Inter, sans-serif;
+    height: 100vh;
+}
+
+header {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.links li {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.links li:hover {
+    color: var(--soft-orange);
+}
+
+main {
+    height: calc(100% - 5rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    flex-grow: 4;
+    background-color: red;
+}
+
+.flexbox {
+    flex-grow: 1;
+    background-color: blue;
+}
