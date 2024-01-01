@@ -1,53 +1,51 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    --soft-orange: hsl(35, 77%, 62%);
+  --soft-orange: hsl(35, 77%, 62%);
 }
 
 body {
-    margin: 0;
-    padding: 5rem 12rem 5rem 12rem;
-    font-size: 15px;
-    font-family: Inter, sans-serif;
-    height: 100vh;
+  margin: 0;
+  padding: 5rem 12rem 5rem 12rem;
+  font-size: 15px;
+  font-family: Inter, sans-serif;
+  height: 100vh;
 }
 
 header {
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .links {
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
 }
 
 .links li {
-    display: inline-block;
-    cursor: pointer;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .links li:hover {
-    color: var(--soft-orange);
+  color: var(--soft-orange);
 }
 
 main {
-    height: calc(100% - 5rem);
-    display: flex;
-    flex-direction: column;
+  height: calc(100% - 5rem);
+  display: flex;
+  flex-direction: column;
 }
 
 .grid {
-    flex-grow: 4;
-    background-color: red;
-}
-
-.flexbox {
-    flex-grow: 1;
-    background-color: blue;
+  display: grid;
+  grid-template: 1fr 1fr / 2fr 1fr;
+  grid-template-areas:
+    "banner banner new"
+    "future read new";
 }
